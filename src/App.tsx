@@ -1,10 +1,9 @@
-import React from "react";
-import "./App.css";
+/* eslint-disable react/react-in-jsx-scope */
+import './App.css';
+import {RouterProvider} from 'react-router-dom';
+import {router} from './router';
 
-function App() {
-    return (
-      <h1 className="text-2xl text-blue-500">TEST</h1>
-    );
-}
-
+const App = () => {
+	return <RouterProvider router={router} />;
+};
 export default App;
